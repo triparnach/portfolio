@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Triparna Chatterjee — Portfolio</title>
+  <meta name="description" content="Portfolio of Triparna Chatterjee — writer, researcher, and freelancer. Showcasing writing samples, dissertation work, services and resume." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fcfcfd;
+      --muted:#6b7280;
+      --accent:#0f172a;
+      --card:#ffffff;
+      --glass: rgba(15,23,42,0.04);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--accent);line-height:1.5;scroll-behavior:smooth;}
+    .container{max-width:1100px;margin:36px auto;padding:0 20px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .avatar{width:56px;height:56px;border-radius:10px;background:var(--glass);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);box-shadow:0 2px 8px rgba(15,23,42,0.1);}
+    h1{font-size:28px;margin:0;font-weight:700;}
+    h3, h4{font-weight:700;}
+    p.lead{color:var(--muted);margin:6px 0 0;line-height:1.6;}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-bottom:36px}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.7));padding:28px;border-radius:14px;box-shadow:0 6px 20px rgba(15,23,42,0.06);transition: transform 0.2s;}
+    .hero-card:hover{transform: translateY(-3px);}
+    .cta-row{display:flex;gap:12px;margin-top:18px}
+    .btn{padding:10px 14px;border-radius:10px;text-decoration:none;border:1px solid transparent;display:inline-block;transition: all 0.2s ease;}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-primary:hover{box-shadow:0 4px 12px rgba(15,23,42,0.2); transform: translateY(-2px);}
+    .btn-ghost{background:transparent;border:1px solid #e6e8eb;color:var(--accent)}
+    .btn:hover{opacity:0.9;}
+
+    section{margin-bottom:28px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(15,23,42,0.04);transition: transform 0.3s, box-shadow 0.3s;}
+    .card:hover{transform: translateY(-5px); box-shadow:0 6px 20px rgba(15,23,42,0.1);}
+    .skill-list{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{padding:6px 10px;border-radius:999px;background:var(--glass);font-size:13px;transition: transform 0.2s;}
+    .skill:hover{transform: scale(1.05);}
+
+    .portfolio-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .proj-title{font-weight:600;margin:0 0 6px}
+    .muted{color:var(--muted);font-size:14px;line-height:1.6;}
+
+    .resume{display:flex;gap:16px;align-items:center}
+    .download{padding:10px 12px;border-radius:10px;background:transparent;border:1px dashed rgba(15,23,42,0.08)}
+
+    form{display:grid;gap:10px}
+    input,textarea{padding:10px;border-radius:8px;border:1px solid rgba(15,23,42,0.06)}
+    textarea{min-height:120px}
+
+    footer{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:14px;padding:18px 0}
+    footer a{transition: color 0.2s;}
+    footer a:hover{color:var(--accent); text-decoration:underline;}
+
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr;}
+      .portfolio-grid{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      .grid-3{grid-template-columns:1fr}
+      .brand .name{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">TC</div>
+        <div>
+          <div class="name"><strong>Triparna Chatterjee</strong></div>
+          <div class="muted">freelance academic/creative/technical writer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about" class="muted">About</a>
+        &nbsp;•&nbsp;
+        <a href="#portfolio" class="muted">Work</a>
+        &nbsp;•&nbsp;
+        <a href="#services" class="muted">Services</a>
+        &nbsp;•&nbsp;
+        <a href="#contact" class="muted">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <h1>Triparna Chatterjee</h1>
+          <p class="lead">Triparna Chatterjee is a freelance academic, technical, and content writer pursuing her Master’s in Zoology at Lady Brabourne College, Kolkata. She combines research expertise with strong writing skills to produce clear, structured, and engaging content across academic and professional fields. Her work reflects a balance of analytical precision and creative expression, making complex ideas accessible and impactful.</p>
+
+          <div style="margin-top:16px">
+            <div class="skill-list">
+              <span class="skill">Academic and Technical Writing</span>
+              <span class="skill">Creative and Content Writing</span>
+              <span class="skill">Data Entry and Documentation</span>
+              <span class="skill">Research and Report Preparation</span>
+              <span class="skill">Microsoft Office (Word, Excel, Powerpoint)</span>
+            </div>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#contact">Hire me</a>
+            <a class="btn btn-ghost" href="https://drive.google.com/file/d/10Vo60bwnnL59ynfKzWc9lLj-_uhmlr37/view?usp=drive_link" target="_blank" rel="noopener">Download Resume</a>
+            <a class="btn" href="#portfolio">See samples</a>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h4 style="margin-top:0">Quick Stats</h4>
+            <p class="muted">Freelance rate: <strong>₹1000/project</strong></p>
+            <p class="muted">Turnaround example: <strong>7 days</strong></p>
+            <hr />
+            <p class="muted">Availability: <strong>Part-time/Freelance</strong></p>
+            <p class="muted">Location: <strong>India</strong></p>
+          </div>
+        </aside>
+      </section>
+
+      <section id="about">
+        <div class="card">
+          <h3>About</h3>
+          <p class="muted">Triparna Chatterjee is a postgraduate student of Zoology at Lady Brabourne College, Kolkata, with a growing portfolio in academic and technical writing. Her background in biological sciences gives her a strong research perspective, allowing her to craft well-structured and evidence-based content. Over the past year, she has worked on projects ranging from academic essays and dissertation materials to SEO-based articles and creative pieces. Triparna is passionate about simplifying scientific ideas and helping readers engage with complex topics through clarity and thoughtful writing.</p>
+        </div>
+      </section>
+
+      <section id="services">
+        <h3>Services</h3>
+        <div class="grid-3">
+          <div class="card">
+            <h4>Ghostwriting & Articles</h4>
+            <p class="muted">Research-backed articles, blog posts, and academic-style writeups.</p>
+          </div>
+          <div class="card">
+            <h4>Editing & Proofreading</h4>
+            <p class="muted">Structural edits, copyediting, APA formatting and proofreading.</p>
+          </div>
+          <div class="card">
+            <h4>Dissertation Support</h4>
+            <p class="muted">Literature reviews, data presentation, and abstract polishing.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h3>Selected Work</h3>
+        <div class="portfolio-grid">
+          <article class="card">
+            <p class="proj-title">Cloning in Rat: Applications, Methodologies & Ethical Considerations</p>
+            <p class="muted">A comprehensive review exploring the scientific techniques and ethical debates surrounding rat cloning. <a href="https://drive.google.com/file/d/1w4XNkD1yx1Hy23QFS4xgvLi5XAYlL9lP/view?usp=drive_link" target="_blank" rel="noopener">Read</a></p>
+          </article>
+
+          <article class="card">
+            <p class="proj-title">Evolutionary Genetics: How Species Adapt Over Time</p>
+            <p class="muted">This article explores the mechanisms of evolutionary genetics, focusing on how species adapt over time through genetic variations and natural selection. <a href="https://drive.google.com/file/d/1RThuuhl0ZLS7BLHO846P9QFF3pShgMFe/view?usp=drive_link" target="_blank" rel="noopener">Read</a></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="resume">
+        <h3>Resume</h3>
+        <div class="card resume">
+          <div>
+            <p class="muted">Download a printable resume (PDF)</p>
+            <a class="download" href="https://drive.google.com/file/d/10Vo60bwnnL59ynfKzWc9lLj-_uhmlr37/view?usp=drive_link" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+          <div style="margin-left:auto;text-align:right">
+            <p class="muted">Current role: <strong>Master's student</strong></p>
+            <p class="muted">Open to freelance & part-time work</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h3>Contact</h3>
+        <div class="card">
+          <form action="mailto:triparnach@gmail.com" method="post" enctype="text/plain">
+            <label class="muted">Name
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <label class="muted">Email
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+            <label class="muted">Message
+              <textarea name="message" placeholder="Project details, deadline, budget"></textarea>
+            </label>
+            <div style="display:flex;gap:8px;margin-top:8px">
+              <button class="btn btn-primary" type="submit">Send email</button>
+              <a class="btn btn-ghost" href="mailto:triparnach@gmail.com">Or email directly</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year">2025</span> Triparna
